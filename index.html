@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ELV Pricing Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚗 ELV Pricing Calculator</h1>
+
+<!-- STEP 1 -->
+<div class="card">
+<h2>Vehicle Details</h2>
+
+<input id="make" placeholder="Make (Hyundai, Maruti...)">
+<input id="model" placeholder="Model (i20, Swift...)">
+<input id="variant" placeholder="Variant">
+<input id="reg" placeholder="Registration Number">
+<input id="mv" type="number" placeholder="Maximum Value ₹">
+</div>
+
+<!-- STEP 2 -->
+<div class="card">
+<h2>Condition Rating</h2>
+
+<div id="ratings"></div>
+</div>
+
+<!-- STEP 3 -->
+<div class="card">
+<h2>Features</h2>
+
+<label>Engine</label>
+<select id="engine">
+<option>Working</option>
+<option>Not Working</option>
+</select>
+
+<label>Alloy</label>
+<select id="alloy">
+<option>No</option>
+<option>Yes</option>
+</select>
+
+<label>Battery</label>
+<select id="battery">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Spare</label>
+<select id="spare">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Music</label>
+<select id="music">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>CNG</label>
+<select id="cng">
+<option>No</option>
+<option>Yes</option>
+</select>
+
+</div>
+
+<button onclick="calculate()">Calculate</button>
+
+<div class="result">
+<h2>Final Price: ₹ <span id="final">0</span></h2>
+<p>Condition %: <span id="condition"></span></p>
+</div>
+
+><!-- <button onclick="saveData()">Save Record</button>-->
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
